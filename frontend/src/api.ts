@@ -27,10 +27,7 @@ export async function atualizarStatus(orderId: string, newStatus: OrderStatus): 
 }
 
 /** ✅ NOVO: Criar pedido */
-export async function criarPedido(payload: {
-  order_id: string;
-  order: any;
-}): Promise<OrderRecord> {
+export async function criarPedido(payload: any): Promise<OrderRecord> {
   const res = await fetch(`${API_BASE}/orders`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -41,3 +38,4 @@ export async function criarPedido(payload: {
   if (!res.ok) throw new Error(data?.message ?? "Erro ao criar pedido.");
   return data;
 }
+

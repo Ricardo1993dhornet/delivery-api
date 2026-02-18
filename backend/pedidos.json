@@ -419,5 +419,65 @@
         }
       }
     }
+  },
+  {
+    "store_id": "eff76d4f-2745-4914-bf65-ac3a7adb55a2",
+    "order_id": "513329b6-65c9-4337-a007-8be7eed9fbc2",
+    "order": {
+      "payments": [
+        {
+          "prepaid": true,
+          "value": 89.9,
+          "origin": "CREDIT_CARD"
+        }
+      ],
+      "last_status_name": "RECEIVED",
+      "store": {
+        "name": "Coco Bambu Loja Teste",
+        "id": "eff76d4f-2745-4914-bf65-ac3a7adb55a2"
+      },
+      "total_price": 89.9,
+      "order_id": "513329b6-65c9-4337-a007-8be7eed9fbc2",
+      "items": [
+        {
+          "code": 1001,
+          "price": 89.9,
+          "observations": "Sem cebola",
+          "total_price": 89.9,
+          "name": "Camarao Alfredo",
+          "quantity": 1,
+          "discount": 0,
+          "condiments": []
+        }
+      ],
+      "created_at": 1771446994260,
+      "statuses": [
+        {
+          "created_at": 1771446993991,
+          "name": "RECEIVED",
+          "order_id": "513329b6-65c9-4337-a007-8be7eed9fbc2",
+          "origin": "SYSTEM"
+        }
+      ],
+      "customer": {
+        "temporary_phone": "+556199999999",
+        "name": "xablau"
+      },
+      "delivery_address": {
+        "reference": "Portão A",
+        "street_name": "Rua das Pitangueiras",
+        "postal_code": "71.900-100",
+        "country": "BR",
+        "city": "Brasília",
+        "neighborhood": "Águas Claras",
+        "street_number": "1050",
+        "state": "Distrito Federal",
+        "coordinates": {
+          "longitude": -48.025,
+          "latitude": -15.835,
+          "id": 3615805
+        }
+      }
+    }
   }
 ]
