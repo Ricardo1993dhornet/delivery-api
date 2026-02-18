@@ -39,3 +39,13 @@ export async function criarPedido(payload: any): Promise<OrderRecord> {
   return data;
 }
 
+export async function deletarPedido(orderId: string): Promise<void> {
+  const res = await fetch(`${API_BASE}/orders/${orderId}`, {
+    method: "DELETE",
+  });
+
+  if (!res.ok) {
+    const data = await res.json().catch(() => ({}));
+    throw new Error(data?.message ?? "Erro ao deletar pedido.");
+  }
+}

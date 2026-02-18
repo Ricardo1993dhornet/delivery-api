@@ -282,145 +282,6 @@
     }
   },
   {
-    "store_id": "09280cf2-6623-410d-84df-592ea9e18ce9",
-    "order_id": "819b0509-756e-4918-b196-1919c1158573",
-    "order": {
-      "payments": [],
-      "last_status_name": "RECEIVED",
-      "store": {
-        "id": "09280cf2-6623-410d-84df-592ea9e18ce9",
-        "name": "Loja não informada"
-      },
-      "total_price": 0,
-      "order_id": "819b0509-756e-4918-b196-1919c1158573",
-      "items": [],
-      "created_at": 1771360140091,
-      "statuses": [
-        {
-          "created_at": 1771360140093,
-          "name": "RECEIVED",
-          "order_id": "819b0509-756e-4918-b196-1919c1158573",
-          "origin": "SYSTEM"
-        }
-      ],
-      "customer": {
-        "name": "Cliente não informado",
-        "temporary_phone": ""
-      },
-      "delivery_address": {
-        "reference": null,
-        "street_name": "",
-        "postal_code": "",
-        "country": "BR",
-        "city": "",
-        "neighborhood": "",
-        "street_number": "",
-        "state": "",
-        "coordinates": {
-          "longitude": 0,
-          "latitude": 0,
-          "id": 0
-        }
-      }
-    }
-  },
-  {
-    "store_id": "189dd446-6713-4904-9945-26b930e88b2e",
-    "order_id": "order_999",
-    "order": {
-      "payments": [],
-      "last_status_name": "RECEIVED",
-      "store": {
-        "name": "Loja Teste"
-      },
-      "total_price": 20,
-      "order_id": "order_999",
-      "items": [
-        {
-          "name": "X-Burger",
-          "qty": 1,
-          "price": 20
-        }
-      ],
-      "created_at": 1771360150889,
-      "statuses": [
-        {
-          "created_at": 1771360150889,
-          "name": "RECEIVED",
-          "order_id": "order_999",
-          "origin": "SYSTEM"
-        }
-      ],
-      "customer": {
-        "name": "Cliente não informado",
-        "temporary_phone": ""
-      },
-      "delivery_address": {
-        "reference": null,
-        "street_name": "",
-        "postal_code": "",
-        "country": "BR",
-        "city": "",
-        "neighborhood": "",
-        "street_number": "",
-        "state": "",
-        "coordinates": {
-          "longitude": 0,
-          "latitude": 0,
-          "id": 0
-        }
-      }
-    }
-  },
-  {
-    "store_id": "0fe08c33-80ca-4c98-99c0-8fa4e1b230ee",
-    "order_id": "ordder 343",
-    "order": {
-      "payments": [],
-      "last_status_name": "RECEIVED",
-      "store": {
-        "name": "teste1"
-      },
-      "total_price": 10,
-      "order_id": "ordder 343",
-      "items": [
-        {
-          "name": "xuxu ao molho branco",
-          "qty": 1,
-          "price": 10
-        }
-      ],
-      "created_at": 1771376616900,
-      "statuses": [
-        {
-          "created_at": 1771376616900,
-          "name": "RECEIVED",
-          "order_id": "ordder 343",
-          "origin": "SYSTEM"
-        }
-      ],
-      "customer": {
-        "name": "Cliente não informado",
-        "temporary_phone": ""
-      },
-      "delivery_address": {
-        "reference": null,
-        "street_name": "",
-        "postal_code": "",
-        "country": "BR",
-        "city": "",
-        "neighborhood": "",
-        "street_number": "",
-        "state": "",
-        "coordinates": {
-          "longitude": 0,
-          "latitude": 0,
-          "id": 0
-        }
-      }
-    }
-  },
-  {
     "store_id": "eff76d4f-2745-4914-bf65-ac3a7adb55a2",
     "order_id": "513329b6-65c9-4337-a007-8be7eed9fbc2",
     "order": {
@@ -431,7 +292,7 @@
           "origin": "CREDIT_CARD"
         }
       ],
-      "last_status_name": "RECEIVED",
+      "last_status_name": "CONFIRMED",
       "store": {
         "name": "Coco Bambu Loja Teste",
         "id": "eff76d4f-2745-4914-bf65-ac3a7adb55a2"
@@ -457,6 +318,12 @@
           "name": "RECEIVED",
           "order_id": "513329b6-65c9-4337-a007-8be7eed9fbc2",
           "origin": "SYSTEM"
+        },
+        {
+          "created_at": 1771451014996,
+          "name": "CONFIRMED",
+          "order_id": "513329b6-65c9-4337-a007-8be7eed9fbc2",
+          "origin": "SYSTEM"
         }
       ],
       "customer": {
@@ -476,6 +343,66 @@
           "longitude": -48.025,
           "latitude": -15.835,
           "id": 3615805
+        }
+      }
+    }
+  },
+  {
+    "store_id": "53819437-ad89-47c3-bdf2-f9e751e5e829",
+    "order_id": "fbba3493-562f-4524-90f6-1467616f6e93",
+    "order": {
+      "payments": [
+        {
+          "prepaid": true,
+          "value": 89.9,
+          "origin": "CREDIT_CARD"
+        }
+      ],
+      "last_status_name": "RECEIVED",
+      "store": {
+        "name": "Coco Bambu Loja Teste",
+        "id": "53819437-ad89-47c3-bdf2-f9e751e5e829"
+      },
+      "total_price": 89.9,
+      "order_id": "fbba3493-562f-4524-90f6-1467616f6e93",
+      "items": [
+        {
+          "code": 1001,
+          "price": 89.9,
+          "observations": "Sem cebola",
+          "total_price": 89.9,
+          "name": "Camarao Alfredo",
+          "quantity": 1,
+          "discount": 0,
+          "condiments": []
+        }
+      ],
+      "created_at": 1771454876779,
+      "statuses": [
+        {
+          "created_at": 1771454876916,
+          "name": "RECEIVED",
+          "order_id": "fbba3493-562f-4524-90f6-1467616f6e93",
+          "origin": "SYSTEM"
+        }
+      ],
+      "customer": {
+        "temporary_phone": "+556199999999",
+        "name": "Cliente Teste"
+      },
+      "delivery_address": {
+        "reference": "Portão A",
+        "street_name": "Rua das Pitangueiras",
+        "postal_code": "71.900-100",
+        "country": "BR",
+        "city": "Brasília",
+        "neighborhood": "Águas Claras",
+        "street_number": "1050",
+        "state": "Distrito Federal",
+        "coordinates": {
+          "longitude": -48.025,
+          "latitude": -15.835,
+          "id": 962301
         }
       }
     }

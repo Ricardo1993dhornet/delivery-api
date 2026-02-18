@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { atualizarStatus, buscarPedido } from "../api";
 import { Badge } from "../components/Badge";
 import { OrderRecord, OrderStatus } from "../types";
+import { deletarPedido } from "../api";
+
 
 const transicoes: Record<OrderStatus, OrderStatus[]> = {
   RECEIVED: ["CONFIRMED", "CANCELED"],
@@ -39,6 +41,22 @@ export function OrderDetails({
     carregar();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [orderId]);
+
+
+  async function handleDelete() {
+    const ok = confirm("Tem certeza que deseja deletar este pedido?");
+    if (!ok) return;
+
+    try {
+      await deletarPedido(orderId);
+      alert("Pedido deletado com sucesso!");
+
+      // recarrega a página (simples e funciona)
+      window.location.reload();
+    } catch (e: any) {
+      alert(e?.message ?? "Erro ao deletar pedido.");
+    }
+  }
 
   async function mudarStatus(s: OrderStatus) {
     try {
@@ -110,7 +128,26 @@ export function OrderDetails({
             >
               Alterar para: {s}
             </button>
+
           ))}
+          <button
+            onClick={handleDelete}
+            disabled={acaoLoading}
+            style={{
+              padding: "10px 14px",
+              borderRadius: 12,
+              border: "1px solid #ddd",
+              background: "white",
+              cursor: "pointer",
+              fontWeight: 700,
+              color: "#ef4444",
+              marginTop: 14,
+              opacity: acaoLoading ? 0.6 : 1,
+            }}
+          >
+            Deletar Pedido
+          </button>
+
         </div>
       )}
 
@@ -127,11 +164,14 @@ export function OrderDetails({
           >
             <div style={{ display: "flex", justifyContent: "space-between" }}>
               <b>{it.name}</b>
-              <span>R$ {it.total_price.toFixed(2)}</span>
+              <span>
+                R$ {(it.total_price ?? (it.price * it.quantity)).toFixed(2)}
+              </span>
+
             </div>
             <div style={{ marginTop: 6, color: "#555", fontSize: 13 }}>
-              <div><b>Qtd:</b> {it.quantity}</div>
-              <div><b>Obs:</b> {it.observations ?? "-"}</div>
+              <div><b>Qtd:</b> {it.quantity ?? it.quantity}</div>
+              <div><b>Obs:</b> {it.observations ?? it.observations ?? "-"}</div>
             </div>
           </div>
         ))}
