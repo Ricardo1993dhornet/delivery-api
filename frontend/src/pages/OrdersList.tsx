@@ -2,6 +2,8 @@ import React, { useEffect, useMemo, useState } from "react";
 import { listarPedidos } from "../api";
 import { OrderRecord } from "../types";
 import { Badge } from "../components/Badge";
+import { NewOrderForm } from "./NewOrderForm";
+
 
 export function OrdersList({
   onSelect,
@@ -48,6 +50,15 @@ export function OrdersList({
       <p style={{ marginTop: 6, color: "#555" }}>
         Clique em um pedido para ver detalhes.
       </p>
+
+      <div style={{ marginTop: 14, marginBottom: 14 }}>
+        <NewOrderForm
+          onCreated={(created) => {
+            setPedidos((prev) => [created, ...prev]);
+            onSelect(created.order_id);
+          }}
+        />
+      </div>
 
       <input
         value={busca}

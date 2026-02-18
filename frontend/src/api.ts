@@ -20,7 +20,24 @@ export async function atualizarStatus(orderId: string, newStatus: OrderStatus): 
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ new_status: newStatus }),
   });
+
   const data = await res.json().catch(() => ({}));
   if (!res.ok) throw new Error(data?.message ?? "Erro ao atualizar status.");
+  return data;
+}
+
+/** ✅ NOVO: Criar pedido */
+export async function criarPedido(payload: {
+  order_id: string;
+  order: any;
+}): Promise<OrderRecord> {
+  const res = await fetch(`${API_BASE}/orders`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(data?.message ?? "Erro ao criar pedido.");
   return data;
 }

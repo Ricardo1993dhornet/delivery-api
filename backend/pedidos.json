@@ -280,5 +280,144 @@
         }
       }
     }
+  },
+  {
+    "store_id": "09280cf2-6623-410d-84df-592ea9e18ce9",
+    "order_id": "819b0509-756e-4918-b196-1919c1158573",
+    "order": {
+      "payments": [],
+      "last_status_name": "RECEIVED",
+      "store": {
+        "id": "09280cf2-6623-410d-84df-592ea9e18ce9",
+        "name": "Loja não informada"
+      },
+      "total_price": 0,
+      "order_id": "819b0509-756e-4918-b196-1919c1158573",
+      "items": [],
+      "created_at": 1771360140091,
+      "statuses": [
+        {
+          "created_at": 1771360140093,
+          "name": "RECEIVED",
+          "order_id": "819b0509-756e-4918-b196-1919c1158573",
+          "origin": "SYSTEM"
+        }
+      ],
+      "customer": {
+        "name": "Cliente não informado",
+        "temporary_phone": ""
+      },
+      "delivery_address": {
+        "reference": null,
+        "street_name": "",
+        "postal_code": "",
+        "country": "BR",
+        "city": "",
+        "neighborhood": "",
+        "street_number": "",
+        "state": "",
+        "coordinates": {
+          "longitude": 0,
+          "latitude": 0,
+          "id": 0
+        }
+      }
+    }
+  },
+  {
+    "store_id": "189dd446-6713-4904-9945-26b930e88b2e",
+    "order_id": "order_999",
+    "order": {
+      "payments": [],
+      "last_status_name": "RECEIVED",
+      "store": {
+        "name": "Loja Teste"
+      },
+      "total_price": 20,
+      "order_id": "order_999",
+      "items": [
+        {
+          "name": "X-Burger",
+          "qty": 1,
+          "price": 20
+        }
+      ],
+      "created_at": 1771360150889,
+      "statuses": [
+        {
+          "created_at": 1771360150889,
+          "name": "RECEIVED",
+          "order_id": "order_999",
+          "origin": "SYSTEM"
+        }
+      ],
+      "customer": {
+        "name": "Cliente não informado",
+        "temporary_phone": ""
+      },
+      "delivery_address": {
+        "reference": null,
+        "street_name": "",
+        "postal_code": "",
+        "country": "BR",
+        "city": "",
+        "neighborhood": "",
+        "street_number": "",
+        "state": "",
+        "coordinates": {
+          "longitude": 0,
+          "latitude": 0,
+          "id": 0
+        }
+      }
+    }
+  },
+  {
+    "store_id": "0fe08c33-80ca-4c98-99c0-8fa4e1b230ee",
+    "order_id": "ordder 343",
+    "order": {
+      "payments": [],
+      "last_status_name": "RECEIVED",
+      "store": {
+        "name": "teste1"
+      },
+      "total_price": 10,
+      "order_id": "ordder 343",
+      "items": [
+        {
+          "name": "xuxu ao molho branco",
+          "qty": 1,
+          "price": 10
+        }
+      ],
+      "created_at": 1771376616900,
+      "statuses": [
+        {
+          "created_at": 1771376616900,
+          "name": "RECEIVED",
+          "order_id": "ordder 343",
+          "origin": "SYSTEM"
+        }
+      ],
+      "customer": {
+        "name": "Cliente não informado",
+        "temporary_phone": ""
+      },
+      "delivery_address": {
+        "reference": null,
+        "street_name": "",
+        "postal_code": "",
+        "country": "BR",
+        "city": "",
+        "neighborhood": "",
+        "street_number": "",
+        "state": "",
+        "coordinates": {
+          "longitude": 0,
+          "latitude": 0,
+          "id": 0
+        }
+      }
+    }
   }
 ]
