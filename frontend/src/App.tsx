@@ -31,7 +31,6 @@ export default function App() {
       </main>
 
       <footer style={{ marginTop: 24, opacity: 0.7, fontSize: 12 }}>
-        Backend: http://localhost:3000 • Frontend: http://localhost:5173
       </footer>
     </div>
   );
