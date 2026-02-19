@@ -147,10 +147,6 @@ delivery-api/
 ├── backlog/ # Backlog de funcionalidades e histórias
 │ └── BACKLOG.md # Lista de User Stories priorizadas
 │
-├── docs/ # Documentação interna do projeto
-│ ├── ARQUITETURA.md # Diagrama e explicação de arquitetura
-│ └── ... (outras docs) # Documentos adicionais
-│
 ├── docker-compose.yml # Orquestração dos containers (backend + frontend)
 │
 └── README.md # Visão geral do projeto e instruções
