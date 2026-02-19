@@ -28,6 +28,19 @@ A aplicação possui:
 
 ---
 
+## 🐳 Como executar o projeto com Docker
+
+Na raiz do projeto, execute:
+
+```bash
+docker compose up --build
+
+Acesse:
+- Frontend: http://localhost:5173
+- Backend: http://localhost:3000
+```
+---
+
 ## 📦 Como executar o projeto localmente (sem Docker)
 
 ### 1) Backend
@@ -54,20 +67,6 @@ npm run dev
 A interface ficará disponível em:
 ```
 http://localhost:5173
-```
-
----
-
-## 🐳 Como executar o projeto com Docker
-
-Na raiz do projeto, execute:
-
-```bash
-docker compose up --build
-
-Acesse:
-- Frontend: http://localhost:5173
-- Backend: http://localhost:3000
 ```
 
 ---
@@ -131,21 +130,39 @@ Os pedidos possuem os seguintes estados:
 
 ```
 delivery-api/
- ├─ backend/
- ├─ frontend/
- ├─ backlog/
- ├─ docs/
- ├─ docker-compose.yml
- └─ README.md
+├── backend/ # API REST em Node.js + TypeScript
+│ ├── src/ # Código-fonte do backend
+│ ├── pedidos.json # Dados persistidos em JSON
+│ ├── Dockerfile # Imagem Docker do backend
+│ ├── tsconfig.json # Configuração TypeScript
+│ └── package.json # Dependências e scripts
+│
+├── frontend/ # Aplicação web em React + TypeScript
+│ ├── src/ # Código-fonte do frontend
+│ ├── public/ # Recursos públicos (HTML, ícones)
+│ ├── Dockerfile # Imagem Docker do frontend
+│ ├── vite.config.ts # Configuração do Vite
+│ └── package.json # Dependências e scripts
+│
+├── backlog/ # Backlog de funcionalidades e histórias
+│ └── BACKLOG.md # Lista de User Stories priorizadas
+│
+├── docs/ # Documentação interna do projeto
+│ ├── ARQUITETURA.md # Diagrama e explicação de arquitetura
+│ └── ... (outras docs) # Documentos adicionais
+│
+├── docker-compose.yml # Orquestração dos containers (backend + frontend)
+│
+└── README.md # Visão geral do projeto e instruções
 ```
 
 ---
 
-## 🧠 Backlog e Melhorias Futuras
+## 🧠 Backlog
 
 O backlog completo do projeto está disponível em:
 
-📌 `backlog/BACKLOG.md`
+📌 `backlog.md`
 
 ---
 
